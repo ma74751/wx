@@ -1,0 +1,19 @@
+<!--pages/dingdan/dingdan.wxml-->
+<!-- 顶部标题 -->
+<view style="text-align: center;margin-top: 5vh;">
+  <text style="font-weight: bold;">订单</text>
+</view>
+<!-- 选项卡 -->
+<view class="tabs">
+  <view class="tab">
+    <block wx:for="{{['点餐','券包']}}" wx:key="null">
+      <view class="tab_item {{currentTabIndex == index? 'selected':''}}" bindtap="onTabItemTap" data-index="{{index}}">
+       {{item}}
+      </view>
+    </block>
+  </view>
+  <view class="item_detail">
+   <view hidden="{{currentTabIndex != 0}}" style="margin: 0 auto;text-align: center;">你还没有订单<text>\n</text><button size="mini">去下单</button></view>
+   <view hidden="{{currentTabIndex != 1}}">当前券包为空！</view>
+  </view>
+</view>

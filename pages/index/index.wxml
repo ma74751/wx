@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view class="v2">
+<swaper></swaper>
+<view class="v1" style="background: rgba(255, 255, 255, {{opacity}});">
+<view class="img1"><image src="/img/logo.jpg" style="height: {{img}}px;width: {{img}}px;"></image></view>
+<text class="t1" style="color: {{color}};opacity: {{opacity1}};">茶小铭饮品管理有限公司</text><text>\n</text>
+<text class="t2" style="color: {{color}};opacity: {{opacity1}};">茶巷公山职店 约414km ＞</text>
+</view>
+<view class="v3">
+  <text>VIP</text><text style="color: rgb(121, 67, 20);margin-left: 20px;">限时享大礼包</text><button size="mini" style="background: rgb(34, 34, 34);color: sandybrown;height: 20px;border-radius: 10px;font-size: 10px;font-weight: unset;margin-top: 10px;margin-left: 80px;">免费入会</button>
+</view>
+<view class="v4">
+<view class="v5">
+  <image src="/img/my.png" style="height: 40px;width: 40px;margin-top: 10px;"></image>
+  <text style="position: absolute;top: 10px;left: 50px;">欢迎光临</text>
+  <text>\n</text>
+  <text style="position: absolute;top: 30px;left: 50px;font-size: 12px;color: rgb(131, 131, 131);">在这里遇见美味生活</text>
+  <text style="color: rgb(81, 160, 1);position: absolute;right: 0;top: 20px;font-size: 13px;">我的优惠券 ＞</text>
+</view>
+<view style="width: 90%;margin-left: auto;margin-right: auto;margin-top: 20px;position: relative;">
+  <text style="font-weight: bold;">请先选择门店</text>
+  <view style="background: rgb(245, 245, 245);border-radius: 5px;margin-top: 10px;padding-top: 10px;padding-bottom: 10px;padding-left: 10px;">
+    <text>茶巷公山职店</text>
+    <text>\n</text>
+    <text style="font-size: 12px;">点单营业时间07:00-24:00</text>
+    <image src="/img/map.png" style="width: 20px;height: 20px;position: absolute;right: 10px;bottom: 10px;"></image>
+  </view>
+</view>
+<view style="width: 90%;height: 8vh;background: rgb(0, 167, 42);border-radius: 20px;margin: 0 auto;margin-top: 10px; position: relative;">
+  <view style="width: 40%;margin: 0 auto;">
+    <view style="position:absolute;left: 30%;top: 1vh;">
+      <image src="/img/diancan-o.png" style="width: 30px;height: 30px;"></image>
+    </view>
+    <view style="position: absolute;left: 45%;line-height: 3vh;top: 1vh;">
+      <text style="color: white;font-size: 4vw;">开始点餐</text><text>\n</text>
+      <text style="color: white;font-size: 3vw;">在线点单不排队</text>
+    </view>
+  </view>
+</view>
+<!-- 代金券部分 -->
+<view style="width: 90%; margin: 0 auto;margin-top: 2vh;height: 32vh;">
+  <view style="width: 47%;float: left;">
+    <view style="width: 100%;height: 20vh;background: rgb(207, 204, 204);position: relative;">
+      <view style="width: 60%;height: 10vh;background: white;margin: 0 auto;top: 5vh;position: relative;text-align: center;">
+        <text style="color: red;font-size: 8vw;font-weight: bold;">8</text><text style="color: #ff0000;">元</text><text>\n</text>
+        <text style="color: red;font-size: 3vw;position: relative;top: -1vh;">满10元可用</text>
+      </view>
+    </view>
+    <view style="height: 10vh;background: white;position: relative;">
+      <text>8元代金券</text><text>\n</text>
+      <text style="color:red;">100积分</text>
+      <button style="width: 30%;height: 4vh;font-size: 4vw;color: white;background: green;padding: 0;position: absolute;right: 5%;bottom: 1vh;">兑换</button>
+    </view>
+    <view>
+    </view>
+  </view>
+  <view style="width: 47%;float: right;">
+    <view style="width: 100%;height: 20vh;background: rgb(207, 204, 204);position: relative;">
+      <view style="width: 60%;height: 10vh;background: white;margin: 0 auto;top: 5vh;position: relative;text-align: center;">
+        <text style="color: red;font-size: 8vw;font-weight: bold;">10</text><text style="color: #ff0000;">元</text><text>\n</text>
+        <text style="color: red;font-size: 3vw;position: relative;top: -1vh;">满12元可用</text>
+      </view>
+    </view>
+    <view style="height: 10vh;background: white;position: relative;">
+      <text>10元代金券</text><text>\n</text>
+      <text style="color:red;">120积分</text>
+      <button style="width: 30%;height: 4vh;font-size: 4vw;color: white;background: green;padding: 0;position: absolute;right: 5%;bottom: 1vh;">兑换</button>
+    </view>
+    <view>
+    </view>
+  </view>
+</view>
+<!-- 推荐菜品部分 -->
+<view style="width: 90%;margin: 0 auto;white-space:nowrap;">
+  <text style="font-weight: bold;">推荐菜品</text>
+  <scroll-view scroll-x style="height: 30vh;width: 100%;" enable-flex="true">
+    <view style="height: 30vh;width: 30vw;background: white;display: inline-block;" wx:for="[0,1,2,3,4,5]" wx:key="index">
+      <image src="/img/211115042230022851.jpg" style="height: 70%;"></image>
+      <text>\n</text>
+      <text style="font-size: 4.6vw;">小铭大满贯</text>
+      <text>\n</text>
+      <text style="font-size: 4.6vw;">￥13/桶 起</text>
+    </view>
+  </scroll-view>
+</view>
+<view style="width: 90%; margin: 0 auto;height: 30vh;margin-top: 3vh;">
+  <image src="/img/211115042322490171.jpg" style="width: 100%;"></image>
+</view>
+</view>
+</view>

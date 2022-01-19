@@ -1,0 +1,6 @@
+<!--component/indexswaper/indexswaper.wxml-->
+<swiper autoplay="true" interval="3000">
+<swiper-item><image src="/img/211115042230022851.jpg" /></swiper-item>
+<swiper-item><image src="/img/211115042306131324.jpg" /></swiper-item>
+<swiper-item><image src="/img/211115042322490171.jpg"/></swiper-item>
+</swiper>

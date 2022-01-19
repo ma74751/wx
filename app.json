@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/diancan/diancan",
+    "pages/dingdan/dingdan",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 10000
+  },
+  "tabBar":{
+    "list":[
+      {
+        "text":"首页",
+        "pagePath":"pages/index/index",
+        "iconPath": "img/index-o.png",
+        "selectedIconPath": "img/index.png"
+      },{
+        "text":"点餐",
+        "pagePath":"pages/diancan/diancan",
+        "iconPath": "img/diancan-o.png",
+        "selectedIconPath": "img/diancan.png"
+      },{
+        "text":"订单",
+        "pagePath":"pages/dingdan/dingdan",
+        "iconPath": "img/order-o.png",
+        "selectedIconPath": "img/order.png"
+      },{
+        "text":"我的",
+        "pagePath":"pages/my/my",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my-active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

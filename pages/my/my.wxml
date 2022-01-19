@@ -1,0 +1,6 @@
+<!--pages/my/my.wxml-->
+<view bindtap="yulan" style="margin-top: 30px;">点击预览</view>
+<button bindtap="shangchuan">点击上传图片</button>
+<image wx:for="{{imageArr}}" wx:key="{{item}}" src="{{item}}"></image>
+<button bindtap="getuser">获取用户信息</button>
+<button bindtap="login">登录</button>
