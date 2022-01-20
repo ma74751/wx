@@ -13,7 +13,7 @@
     </block>
   </view>
   <view class="item_detail">
-   <view hidden="{{currentTabIndex != 0}}" style="margin: 0 auto;text-align: center;">你还没有订单<text>\n</text><button size="mini">去下单</button></view>
+   <view hidden="{{currentTabIndex != 0}}" style="margin: 0 auto;text-align: center;">你还没有订单<text>\n</text><button size="mini" bindtap="xiadan">去下单</button></view>
    <view hidden="{{currentTabIndex != 1}}">当前券包为空！</view>
   </view>
 </view>

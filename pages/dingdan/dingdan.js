@@ -7,13 +7,19 @@ Page({
   data: {
     currentTabIndex: 0
   },
+  // 选项卡
   onTabItemTap(e){
     console.log(e.target.dataset.index);
     this.setData({
       currentTabIndex:e.target.dataset.index
     })
   },
-
+// 去下单点击事件
+  xiadan(){
+    wx.switchTab({
+      url: '/pages/diancan/diancan',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

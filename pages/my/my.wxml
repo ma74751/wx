@@ -1,6 +1,38 @@
 <!--pages/my/my.wxml-->
-<view bindtap="yulan" style="margin-top: 30px;">点击预览</view>
-<button bindtap="shangchuan">点击上传图片</button>
-<image wx:for="{{imageArr}}" wx:key="{{item}}" src="{{item}}"></image>
-<button bindtap="getuser">获取用户信息</button>
-<button bindtap="login">登录</button>
+<!-- 顶部绿色背景 -->
+<view style="background: rgb(9, 167, 62);height: 30vh;width: 100%;"></view>
+<!-- 下半部分背景色 -->
+<view style="background: rgb(228, 228, 227);height: 70vh;width: 100%;"></view>
+<!-- 内容 -->
+<view style="width: 90%;height: 65vh;position: absolute;top: 23vh;left: 5%;border-radius: 1vh;">
+  <!-- 内容1 -->
+  <view style="background: white;width: 100%;height: 15vh;border-radius: 1vh;">
+    <image src="/img/my.png" style="height: 40px;width: 40px;margin-top: 3vh;margin-left: 3vh;"></image>
+    <text style="position: relative;left: 2vh;top: -3vh;">Hey,上午好！</text>
+  </view>
+  <!-- 内容2 -->
+  <view style="background: white;width: 89%;height: 18vh;border-radius: 1vh;margin-top: 2vh;padding: 3vh;position: relative;">
+    <text style="font-weight: bold;">普通会员</text>
+    <text>\n</text><text style="font-size: 3vw;color: rgb(177, 176, 174);">欢迎加入本店会员 ~</text>
+    <button style="font-size: 3vw;color: black;background: white;border: 1px solid black;border-radius: 2vh;width: 20%;padding: 0;height: 5vh;line-height: 5vh;position: absolute;top: 5vh;right: 3vh;">会员权益</button>
+    <view style="width: 100%;height: 0.5px;background: rgb(179, 177, 177);"></view>
+    <view style="text-align: center;margin-top: 2vh;">
+      <view style="display: inline-block;margin-right: 10vh;">
+        <text style="font-size: large;">0</text><text>\n</text><text>储值</text>
+      </view>
+      <view style="display: inline-block;">
+        <text style="font-size: large;">0</text><text>\n</text><text>积分</text>
+      </view>
+      <view style="display: inline-block;margin-left: 10vh;">
+        <text style="font-size: large;">0</text><text>\n</text><text>会员码</text>
+      </view>
+    </view>
+  </view>
+  <!-- 内容3 -->
+  <view style="width: 89%;padding: 3vh;margin-top: 2vh;background: white;height: 22vh;border-radius: 1vh;line-height: 5.5vh;">
+    <text>我的优惠券</text><text style="float: right;">></text><text>\n</text>
+    <text>我的订单</text><text style="float: right;">></text><text>\n</text>
+    <text>个人资料</text><text style="float: right;">></text><text>\n</text>
+    <text>关于我们</text><text style="float: right;">></text><text>\n</text>
+  </view>
+</view>

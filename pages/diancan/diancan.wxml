@@ -1,2 +1,5 @@
 <!--pages/diancan/diancan.wxml-->
-<text>pages/diancan/diancan.wxml</text>
+<view style="text-align: center;position: absolute; top: 20vh;width: 100%;">
+  <text>欢迎光临，请登录！</text>
+  <button>点击登录</button>
+</view>
